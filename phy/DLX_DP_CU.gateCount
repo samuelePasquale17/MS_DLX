@@ -1,0 +1,37 @@
+Gate area 0.7980 um^2
+Level 0 Module DLX_DP_CU                                Gates=     18717 Cells=    9383 Area=   14936.4 um^2
+Level 1 Module datapath_dlx                             Gates=18228      Cells=9118     Area=   14546.2 um^2
+Level 2 Module datapath_dlx/PC                          Gates=260        Cells=99       Area=     207.5 um^2
+Level 2 Module datapath_dlx/NEXT_PC_val                 Gates=243        Cells=224      Area=     193.9 um^2
+Level 3 Module datapath_dlx/NEXT_PC_val/SG              Gates=200        Cells=186      Area=     159.6 um^2
+Level 2 Module datapath_dlx/nextPC                      Gates=260        Cells=99       Area=     207.5 um^2
+Level 2 Module datapath_dlx/jump_unit_det               Gates=489        Cells=401      Area=     390.5 um^2
+Level 3 Module datapath_dlx/jump_unit_det/sub_1_root_sub_0_root_sub_29 Gates=123        Cells=120      Area=      98.2 um^2
+Level 3 Module datapath_dlx/jump_unit_det/add_0_root_sub_0_root_sub_29 Gates=288        Cells=247      Area=     230.1 um^2
+Level 2 Module datapath_dlx/MUX_IN_JU                   Gates=100        Cells=71       Area=      80.1 um^2
+Level 2 Module datapath_dlx/IR                          Gates=262        Cells=102      Area=     209.1 um^2
+Level 2 Module datapath_dlx/RF                          Gates=11478      Cells=4928     Area=    9160.0 um^2
+Level 2 Module datapath_dlx/IMM_SEL                     Gates=118        Cells=129      Area=      94.7 um^2
+Level 2 Module datapath_dlx/A                           Gates=260        Cells=100      Area=     207.7 um^2
+Level 2 Module datapath_dlx/B                           Gates=260        Cells=100      Area=     208.0 um^2
+Level 2 Module datapath_dlx/MUX_B_NEXTPC                Gates=113        Cells=71       Area=      90.7 um^2
+Level 2 Module datapath_dlx/IMM                         Gates=260        Cells=100      Area=     208.0 um^2
+Level 2 Module datapath_dlx/ALU1                        Gates=2607       Cells=1731     Area=    2080.7 um^2
+Level 3 Module datapath_dlx/ALU1/MUX4N1_COMPONENT       Gates=136        Cells=104      Area=     108.8 um^2
+Level 3 Module datapath_dlx/ALU1/SUB_SUM_COMPONENT      Gates=743        Cells=542      Area=     593.2 um^2
+Level 4 Module datapath_dlx/ALU1/SUB_SUM_COMPONENT/adder Gates=678        Cells=509      Area=     541.0 um^2
+Level 5 Module datapath_dlx/ALU1/SUB_SUM_COMPONENT/adder/CG Gates=216        Cells=165      Area=     172.9 um^2
+Level 5 Module datapath_dlx/ALU1/SUB_SUM_COMPONENT/adder/SG Gates=461        Cells=344      Area=     368.1 um^2
+Level 3 Module datapath_dlx/ALU1/SHIFTER_COMPONENT      Gates=1437       Cells=843      Area=    1146.7 um^2
+Level 4 Module datapath_dlx/ALU1/SHIFTER_COMPONENT/sll_48 Gates=882        Cells=488      Area=     704.4 um^2
+Level 4 Module datapath_dlx/ALU1/SHIFTER_COMPONENT/srl_41 Gates=441        Cells=285      Area=     351.9 um^2
+Level 3 Module datapath_dlx/ALU1/LOGICALS_COMPONENT     Gates=270        Cells=228      Area=     216.0 um^2
+Level 2 Module datapath_dlx/B_DRIVER                    Gates=118        Cells=129      Area=      94.7 um^2
+Level 2 Module datapath_dlx/NEXTPC_SELECTION            Gates=118        Cells=129      Area=      94.7 um^2
+Level 2 Module datapath_dlx/reg_OUT_ALU                 Gates=260        Cells=100      Area=     208.0 um^2
+Level 2 Module datapath_dlx/ME                          Gates=260        Cells=100      Area=     208.0 um^2
+Level 2 Module datapath_dlx/mux_OUT_ME_SELECT           Gates=117        Cells=128      Area=      93.6 um^2
+Level 2 Module datapath_dlx/reg_OUT_ME                  Gates=260        Cells=100      Area=     208.0 um^2
+Level 1 Module control_unit_dlx                         Gates=481        Cells=260      Area=     383.8 um^2
+Level 2 Module control_unit_dlx/LUT_control_unit        Gates=144        Cells=127      Area=     114.9 um^2
+Level 2 Module control_unit_dlx/reg_1                   Gates=259        Cells=100      Area=     206.7 um^2
