@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Usage $0 <string>"
+fi
+
+rm test.asm.mem
+
+perl ./dlxasm.pl $1
+
+source conv2memory $1.exe > test.asm.mem

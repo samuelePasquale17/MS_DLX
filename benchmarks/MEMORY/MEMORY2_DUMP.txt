@@ -1,0 +1,43 @@
+## REGISTER FILE ##
+R0		0
+R1		5
+R2		4
+R3		3
+R4		2
+R5		1
+R6		0
+R7		7
+R8		9
+R9		0
+R10		0
+R11		0		5
+R12		0		4
+R13		0		3
+R14		0		2
+R15		0		1
+R16		0		0
+R17		0		7
+R18		0		9
+R19		0
+R20		0
+R21		0	
+R22		0	
+R23		0	
+R24		0
+R25		0
+R26		0	
+R27		0
+R28		0
+R29		0
+R30		0
+R31		0
+
+## DATA MEMORY ##
+address 0 -> value 5
+address 1 -> value 4
+address 2 -> value 3
+address 3 -> value 2
+address 4 -> value 1
+address 5 -> value 0
+address 6 -> value 7
+address 7 -> value 9
