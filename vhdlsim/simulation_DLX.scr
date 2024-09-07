@@ -1,0 +1,91 @@
+source compile_DLX.scr
+vcom -reportprogress 300 -work work ./ZZZ-tb_DLX.vhd
+vsim work.cfg_tb_dlx -t 10ps -voptargs=+acc
+
+add wave sim:/tb/DUT/data_mem/Clk
+add wave sim:/tb/DUT/data_mem/Rst
+
+
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/DEST_ADDR/*
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/jump_unit_det/*
+
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/PC/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/IR/Out_reg
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/A/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/B/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/IMM/Out_reg
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/reg_OUT_ALU/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/ME/Out_reg
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/reg_OUT_ME/Out_reg
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/reg_RD1/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/reg_RD2/Out_reg
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/reg_RD3/Out_reg
+
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RF/registers
+add wave sim:/tb/DUT/data_mem/MEMORY
+
+add wave sim:/tb/DUT/instruction_mem/MEMORY
+add wave sim:/tb/DUT/instruction_mem/RESET
+add wave sim:/tb/DUT/instruction_mem/ADDR
+add wave sim:/tb/DUT/instruction_mem/RD_DATA
+
+add wave sim:/tb/DUT/data_mem/DIN
+add wave sim:/tb/DUT/data_mem/DOUT
+add wave sim:/tb/DUT/data_mem/ADDR
+add wave sim:/tb/DUT/data_mem/RW
+
+add wave sim:/tb/DUT/DP_CU/control_unit_dlx/control_word
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_PC
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_PC
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_NEXTPC
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_NEXTPC
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_IRAM
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_IR
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_IR
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RD1_RF
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RD2_RF
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/WR_RF
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_RF
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_RF
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SELECT_EXTI_EXTJ
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_ZERO
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_A
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_A
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_B
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_B
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_IMM
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_IMM
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_RD1
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_RD1
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_A_ZERO
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_B_IMM
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/CTRL_LOGICALS
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SUB_SUM_SEL
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/LOGICAL_ARITH
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/LEFT_RIGHT
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SHIFT_ROTATE
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_OUT
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_ZERO_NOTZERO
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_DOUT_FLG_NEXTPC
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_FLG
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_ALUOUT
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_ALUOUT
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_ME
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_ME
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_RD2
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_RD2
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SEL_OUTDRAM_OUTALU
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_OUT_ME
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_OUT_ME
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/RST_RD3
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/EN_RD3
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/SELECT_RD_ITYPE_R31
+add wave sim:/tb/DUT/DP_CU/datapath_dlx/IS_JUMP_BRANCH
+run 4000 ns
